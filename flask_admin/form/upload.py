@@ -296,10 +296,10 @@ class ImageUploadField(FileUploadField):
     """
     widget = ImageUploadInput()
 
-    keep_image_formats = ('PNG',)
+    keep_image_formats = ('PNG', 'GIF',)
     """
         If field detects that uploaded image is not in this list, it will save image
-        as PNG.
+        as JPEG.
     """
 
     def __init__(self, label=None, validators=None,
